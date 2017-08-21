@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bill.sql.MainActivity"
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/edtRollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="#dc0a0a"
+        android:ems="10"
+        android:hint="Type Roll number"
+        android:inputType="textPersonName"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="#dc0a0a"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Type Student Name"
+        android:textSize="25sp"
+        android:layout_below="@+id/edtRollno"
+        android:layout_alignStart="@+id/edtRollno" />
+
+    <EditText
+        android:id="@+id/edtMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="#dc0a0a"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Type Marks"
+        android:textSize="25sp"
+        android:layout_below="@+id/edtName"
+        android:layout_alignStart="@+id/edtName" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtMarks"
+        android:layout_below="@+id/edtMarks"
+        android:layout_marginTop="53dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_alignEnd="@+id/edtMarks"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnAdd"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="29dp"
+        android:text="DELETE RECORD"
+        android:layout_alignEnd="@+id/btnView" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_marginTop="28dp"
+        android:text="SEARCH A RECORD"
+        android:layout_alignEnd="@+id/btnDelete"
+        android:layout_alignStart="@+id/btnDelete" />
+
+
+</RelativeLayout>
